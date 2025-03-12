@@ -1,0 +1,109 @@
+/* reseteamos estilos que vienen por defecto */
+* {
+    margin:0px;
+    padding: 0px;
+}
+#container {
+    width: 1200px;  /*espacio en la pantalla*/
+    margin: 0px auto;
+    border: 1px solid black
+}
+/* Encabezado */
+header {
+    background:coral;
+    height:100px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    line-height: 100px ;  /* de acorde al valor de heigth*/
+    border-bottom: 3px solid black;
+}
+/* navegador  */
+nav{
+    background-color:cornflowerblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+nav ul li{
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+    display: inline-block; 
+    /* inline block -> elementos uno a lado del otro */
+}
+.izq{
+    float: left;
+    margin: 0px;
+}
+.der{
+    float: right;
+    margin: 0px;
+}
+.clearfix {
+    clear:both; /* */
+}
+/* seccion*/
+#content {
+    float: left;
+    width: calc(80% - 40px);
+    background: lightblue;
+    padding-left:20px ;
+    padding-right:20px ;
+    height: 800px;
+}
+#contenido1{
+    text-align: right;
+}
+#contenido2{
+    text-align:right
+}
+/* barra lateral*/
+aside {
+    float:left;
+    width: calc(20% - 20px);
+    background: steelblue;
+    min-height: 800px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* footer*/
+footer { 
+    background: black;
+    color: white;
+    height: 100px;
+}
+footer ul {
+    list-style: none;
+    display: inline-block;
+}
+#fi {
+    float: left;
+    line-height: 20px;
+    font-size: 15px;
+    margin-left: 30px;
+    margin: 10px;
+    padding-left: 200px;
+
+}
+#fd {
+    float: right;
+    line-height: 15px;
+    font-size: 15px;
+    margin-right: 30px;
+    margin: 10px;
+    padding-right: 300px
+}
+/* estilos para los articulos */
+article{
+    margin-top: 10px; /*margen superior */
+    margin-bottom: 10px; /* margen inferior*/
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.article:first-child{ /* cambio al primer articulo de la lista*/
+    padding-top: 10px;
+    border-top: 3px solid white;
+}
+.article_h2 {
+    font-size: 10px;
+}
